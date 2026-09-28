@@ -1,20 +1,41 @@
-.input:focus {
-}
-
 .input {
+    width: 372px;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.inputWrapper {
+.input:focus {
+    border-color: #0066CC;
 }
 
 .superInput {
+    border-color: #ccc;
 }
 
 .errorInput {
+    border: 1px solid #CC1439;   /* ← из твоих данных */
 }
 
 .errorInput:focus {
+    border-color: #CC1439;
 }
 
 .error {
+    color: #CC1439;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
 }
